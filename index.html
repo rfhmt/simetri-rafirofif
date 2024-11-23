@@ -11,6 +11,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <nav>
@@ -47,7 +49,9 @@
       </div>
     </div>
 
-    <section class="flex flex-col py-16 px-[120px] justify-center items-center">
+    <section 
+    data-aos="fade-up"
+    class="flex flex-col py-16 px-[120px] justify-center items-center">
         <h2>My Latest Work</h2>
         <div>
 
@@ -100,10 +104,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section data-aos="fade-up">
   
       <section
-        class="w-full pt-16 px-6 lg:px-[133px] lg:px-16 flex flex-col md:flex-row md:justify-between md:items-start"
+      data-aos="fade-up"
+      class="w-full pt-16 px-6 lg:px-[133px] lg:px-16 flex flex-col md:flex-row md:justify-between md:items-start"
       >
         <div class="md:w-1/2">
           <h2 class="text-3xl font-bold mb-4 lg:mb-12 md:text-5xl">
@@ -155,7 +160,7 @@
             </button>
           </form>
         </div>
-      </section>
+      </section data-aos="fade-up">
   
       <section
         class="w-full flex flex-col py-16 px-4 text-center gap-y-4 md:max-w-[360px] md:mx-auto"
@@ -179,7 +184,7 @@
             </div>
           </button>
         </div>
-      </section>
+      </section data-aos="fade-up">
   
       <footer class="bg-blue-800 px-4 py-12 md:py-32 md:px-16 lg:px-[133px]">
         <div class="flex flex-col">
@@ -210,6 +215,9 @@
         </div>
       </footer>
   </body>
+  <script>
+  AOS.init();
+</script>
 </html>
 
 
